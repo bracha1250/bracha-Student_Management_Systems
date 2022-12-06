@@ -1,6 +1,6 @@
 # basicSql
 
-https://git-scm.com/downloads~
+https://git-scm.com/downloads
 ####create github account
 https://www.youtube.com/watch?v=QUtk-Uuq9nE&ab_channel=MicroTalks
 https://www.youtube.com/watch?v=WgZIv5HI44o&ab_channel=SyntaxByte
