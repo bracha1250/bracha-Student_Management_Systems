@@ -74,7 +74,7 @@ http://localhost:8080/swagger-ui.html#
 commit - with swagger
 ### START DOCKER
 ```
-docker run -d -p 5432:5432 -v postgresdata:/var/lib/postgresql/data -e POSTGRES_PASSWORD=postgres postgres
+
 docker ps
 docker logs [containerid]
 ```
