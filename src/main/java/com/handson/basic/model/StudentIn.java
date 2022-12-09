@@ -52,19 +52,39 @@ public class StudentIn implements Serializable {
         return fullname;
     }
 
+    public void setFullname(String fullname) {
+        this.fullname = fullname;
+    }
+
     public LocalDate getBirthDate() {
         return birthDate;
+    }
+
+    public void setBirthDate(LocalDate birthDate) {
+        this.birthDate = birthDate;
     }
 
     public Integer getSatScore() {
         return satScore;
     }
 
+    public void setSatScore(Integer satScore) {
+        this.satScore = satScore;
+    }
+
     public Double getGraduationScore() {
         return graduationScore;
     }
 
+    public void setGraduationScore(Double graduationScore) {
+        this.graduationScore = graduationScore;
+    }
+
     public String getPhone() {
         return phone;
+    }
+
+    public void setPhone(String phone) {
+        this.phone = phone;
     }
 }
