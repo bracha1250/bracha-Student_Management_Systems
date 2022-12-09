@@ -1,13 +1,15 @@
-package com.handson.basic.model;
+package com.handson.basic.repo;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
+import com.handson.basic.model.Student;
 import com.handson.basic.util.Dates;
 import org.hibernate.validator.constraints.Length;
+import org.joda.time.LocalDate;
 
 import javax.validation.constraints.Max;
 import javax.validation.constraints.Min;
+
 import java.io.Serializable;
-import java.time.LocalDate;
 
 import static com.handson.basic.model.Student.StudentBuilder.aStudent;
 
@@ -30,9 +32,6 @@ public class StudentIn implements Serializable {
     @Length(max = 20)
     private String phone;
 
-    public StudentIn() {
-    }
-
 
     public Student toStudent() {
         return aStudent().birthDate(Dates.atUtc(birthDate)).fullname(fullname)
@@ -49,4 +48,23 @@ public class StudentIn implements Serializable {
         student.setPhone(phone);
     }
 
+    public String getFullname() {
+        return fullname;
+    }
+
+    public LocalDate getBirthDate() {
+        return birthDate;
+    }
+
+    public Integer getSatScore() {
+        return satScore;
+    }
+
+    public Double getGraduationScore() {
+        return graduationScore;
+    }
+
+    public String getPhone() {
+        return phone;
+    }
 }

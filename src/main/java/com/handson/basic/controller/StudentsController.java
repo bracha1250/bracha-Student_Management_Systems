@@ -1,7 +1,7 @@
 package com.handson.basic.controller;
 
 import com.handson.basic.model.Student;
-import com.handson.basic.model.StudentIn;
+import com.handson.basic.repo.StudentIn;
 import com.handson.basic.repo.StudentService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;

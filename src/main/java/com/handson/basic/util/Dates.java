@@ -21,7 +21,7 @@ public class Dates {
         return date == null ? null : shortDate.format(date);
     }
 
-    public static Date atUtc(java.time.LocalDate date) {
+    public static Date atUtc(LocalDateTime date) {
         return atUtc(date, TIME_ZONE);
     }
 
