@@ -58,6 +58,8 @@ public class Student implements Serializable {
     @Length(max = 500)
     private String profilePicture;
 
+
+
     public Long getId() {
         return id;
     }

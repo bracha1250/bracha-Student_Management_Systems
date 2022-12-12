@@ -35,22 +35,3 @@ public class StudentService {
     }
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-=======
-}
->>>>>>> e5bbac9 (commit - with students CRUD + REST)
