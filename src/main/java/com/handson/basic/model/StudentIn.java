@@ -1,4 +1,4 @@
-package com.handson.basic.repo;
+package com.handson.basic.model;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 import com.handson.basic.model.Student;
