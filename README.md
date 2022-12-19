@@ -78,7 +78,7 @@ docker run -d -p 5432:5432 -v postgresdata:/var/lib/postgresql/data -e POSTGRES_
 docker ps
 docker logs [containerid]
 ```
-docker-compose.yml
+
 ```
 version: "3"
 services:
@@ -1069,10 +1069,10 @@ application.properties
 ```
 spring.datasource.url=jdbc:postgresql://postgres:5432/postgres
 ```
-sudo vi /etc/hosts (add 127.0.0.1 postgres, 127.0.0.1 appserver
+sudo vi /etc/hosts (add 127.0.0.1 postgres
 <br>
 apply path test_docker.patch
-<br>
+<
 docker build . -t basic-spring
 <br>
 docker-compose -f docker-compose-local.yml up --force-recreate

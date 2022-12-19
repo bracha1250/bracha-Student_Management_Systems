@@ -21,13 +21,14 @@ import javax.persistence.EntityManager;
 import javax.validation.constraints.Min;
 import java.util.List;
 import java.util.Optional;
+import java.util.stream.Collectors;
 
-import static ch.qos.logback.core.util.OptionHelper.isEmpty;
 import static com.handson.basic.util.Dates.atUtc;
 import static com.handson.basic.util.FPS.FPSBuilder.aFPS;
 import static com.handson.basic.util.FPSCondition.FPSConditionBuilder.aFPSCondition;
 import static com.handson.basic.util.FPSField.FPSFieldBuilder.aFPSField;
 import static com.handson.basic.util.Strings.likeLowerOrNull;
+import static org.apache.logging.log4j.util.Strings.isEmpty;
 
 @RestController
 @RequestMapping("/api/students")
