@@ -52,14 +52,13 @@ public class StudentsController {
     @RequestMapping(value = "/sms/all", method = RequestMethod.POST)
     public ResponseEntity<?> smsAll(@RequestParam String text)
     {
-        new Thread(()-> {
-            IteratorUtils.toList(studentService.all().iterator())
-                    .parallelStream()
-                    .map(student -> student.getPhone())
-                    .filter(phone -> !isEmpty(phone))
-                    .forEach(phone -> smsService.send(text, phone));
-        }).start();
-        return new ResponseEntity<>("SENDING", HttpStatus.OK);
+        List<String> phones =
+                IteratorUtils.toList(studentService.all().iterator())
+                        .parallelStream()
+                        .map(student -> student.getPhone())
+                        .filter(phone -> !isEmpty(phone))
+                        .collect(Collectors.toList());
+        return new ResponseEntity<>(smsService.send(new MessageAndPhones(text, phones)), HttpStatus.OK);
     }
     @RequestMapping(value = "/{id}/image", method = RequestMethod.PUT)
     public ResponseEntity<?> uploadStudentImage(@PathVariable Long id,  @RequestParam("image") MultipartFile image)
