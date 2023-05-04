@@ -7,7 +7,7 @@
 - SMS notifications to students
 
 ## Technologies and Tools:
- - **Backend - Java, Spring Boot
+ - **Backend - Java, Spring Boot**
  - **Database - Postgres
  - **Security - JWT
  - **Asynchronous SMS - sms4free
