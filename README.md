@@ -6,8 +6,8 @@ bracha-Student_Management_Systems is a basic spring boot project (Java) designed
 - Management of students with high grades
 - SMS notifications to students
 
-##Technologies and Tools:
-** - Backend - Java, Spring Boot**
+## Technologies and Tools:
+ - **Backend - Java, Spring Boot**
 ** - Database - Postgres**
 ** - Security - JWT**
 ** - Asynchronous SMS - sms4free**
